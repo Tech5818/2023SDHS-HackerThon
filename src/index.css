@@ -5,9 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root {
+  width: 100%;
+}
+/* --------------------------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'LINESeedKR-Bd';
+  text-decoration: none;
+  color: inherit;
+}
+.homeBody {
+  background: url("./img/homeBackround.png");
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+.yellow {
+  color: #FFF620;
+}
+.documentHeader {
+  background: url(./img/documentHeaderImg.png) fixed no-repeat;
+}
+
+/*애니메이션*/
+
+
+/*웹 폰트*/
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LINESeedKR-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/wizfile/font/LINESeedKR-Rg.eot');
+  src:url('https://cdn.jsdelivr.net/gh/wizfile/font/LINESeedKR-Rg.woff') format('woff');
+  font-style: normal;
 }
