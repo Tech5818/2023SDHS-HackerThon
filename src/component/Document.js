@@ -20,6 +20,12 @@ useEffect(() => {
         if (scroll < 160) {
             scrollReset();
         }
+        if (scroll > 370) {
+            headerTitle.style.display = "none";
+        }
+        else {
+            headerTitle.style.display = "block";
+        }
     })
     const scrollTextHanler = (scroll) => {
         headerTitle.style.transform = `translateY(${scroll + 30}px)`;
@@ -78,6 +84,7 @@ const SytledDocument = styled.div`
     background: #f7f7f7;
 `;
 const StyledHeader = styled.header`
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
